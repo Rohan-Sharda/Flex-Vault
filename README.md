@@ -24,6 +24,7 @@
   4. Open flexvault.html file in a browser and you're ready to run the app in your local machine.
 
 ### Useful Links:
+  * [App Link]https://flexvault.netlify.app/
   * [MapMyIndia Console]https://apis.mapmyindia.com/console/
   * [Documentation Link]https://docs.google.com/document/d/19rp9z6_UqBGS1nPo11uyyU18O9OxVEYvTTjofEeEw3A/edit?usp=sharing
 
