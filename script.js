@@ -105,37 +105,9 @@ class App {
       );
   }
 
-  // _loadMap1(position) {
-  //   const { latitude } = position.coords;
-  //   const { longitude } = position.coords;
-  //   // console.log(`https://www.google.pt/maps/@${latitude},${longitude}`);
-
-  //   const coords = [latitude, longitude];
-
-  //   this.#map = L.map('map').setView(coords, this.#mapZoomLevel);
-
-  //   L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
-  //     attribution:
-  //       '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-  //   }).addTo(this.#map);
-  //   const apiKey = 'c406e4f0f1b8aab64b5c503e5222639a';
-
-
-
-
-
-  //   // Handling clicks on map
-  //   this.#map.on('click', this._showForm.bind(this));
-
-  //   this.#workouts.forEach(work => {
-  //     this._renderWorkoutMarker(work);
-  //   });
-  // }
-
 
   _loadMap(position) {
     const { latitude, longitude } = position.coords;
-    // console.log(`https://www.google.pt/maps/@${latitude},${longitude}`);
 
     const coords = [latitude, longitude];
 
@@ -246,22 +218,6 @@ class App {
       icon_url: 'https://apis.mapmyindia.com/map_v3/2.png',
       draggable: true
     });
-
-    // L.marker(workout.coords)
-    //   .addTo(this.#map)
-    //   .bindPopup(
-    //     L.popup({
-    //       maxWidth: 250,
-    //       minWidth: 100,
-    //       autoClose: false,
-    //       closeOnClick: false,
-    //       className: `${workout.type}-popup`,
-    //     })
-    //   )
-    //   .setPopupContent(
-    //     `${workout.type === 'running' ? '🏃‍♂️' : '🚴‍♀️'} ${workout.description}`
-    //   )
-    //   .openPopup();
   }
 
   _renderWorkout(workout) {
@@ -316,7 +272,6 @@ class App {
   }
 
   _moveToPopup(e) {
-    // BUGFIX: When we click on a workout before the map has loaded, we get an error. But there is an easy fix:
     if (!this.#map) return;
 
     const workoutEl = e.target.closest('.workout');
@@ -333,9 +288,6 @@ class App {
         duration: 1,
       },
     });
-
-    // using the public interface
-    // workout.click();
   }
 
   _setLocalStorage() {
