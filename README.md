@@ -1,7 +1,7 @@
-## Repository FlexVault: Map your Ambition
+## Repository FlexVault: Track your Workouts
 
 ### Overview:
-  * FlexVault is a fitness tracker app aiming at storing your visits to the nearest locations and providing a flexibility to set the nearest location to start your journey as per your target. It is a highly productive app and you're just a click away from setting your ambition.
+  * FlexVault is a premier fitness tracker app that meticulously records users' location visits and offers seamless tracking of past workouts, providing users with comprehensive insights to monitor their fitness progress effectively. With its user-friendly interface and advanced features, FlexVault simplifies fitness tracking, empowering users to achieve their health goals effortlessly. 
 
 ### Prerequisites:
   * JavaScript
